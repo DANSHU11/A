@@ -5,7 +5,7 @@ from datetime import datetime, date
 from zhdate import ZhDate
 import sys
 import os
-
+import json
 
 def get_color():
     # 获取随机颜色
@@ -105,7 +105,7 @@ def get_birthday(birthday, year, today):
 def get_ciba():
     url = "http://open.iciba.com/dsapi/"
     headers = {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
                       'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
     }
